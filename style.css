@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+:root{
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li, ul, ol{
+    list-style: none;
+}
+
+body{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    padding-bottom: 0;
+}
+
+header{
+    font-family: "Rigtheous";
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 32px;
+    color: var(--secundary-color);
+
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download{
+    background-color: var(--secundary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 381px;
+    height: 100px;
+    margin-right: 20px;
+    font-size: 48px;
+    color: white;
+    gap: 20px;
+}
+
+h1#tituloTras{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    font-size: 400px;
+    color: rgba(255, 255, 255, 0.2);
+
+}
+
+h1#tituloFrente{
+    transform: translateY(25%);
+    font-size: 300px;
+    color: white;
+}
+
+#pikachuImg{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 559px;
+}
+
+section#secao-paragrafo{
+    display: flex;
+    width: 100vw;
+    padding: 0px 70px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#secao-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.pMain{
+    width: 530px;
+    z-index: 3;
+    color: var(--secundary-color);
+}
+
+.pMain p{
+    font-size: 20px;
+
+}
+
+.pMain h1{
+    font-size: 64px;
+}
+
+footer{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 73px;
+    color: var(--secundary-color);
+}
