@@ -162,5 +162,50 @@ footer{
 
 /* CELULAR */
 @media(max-width: 480px){
+    footer{
+        display: none;
+    }
+
+    .pMain p{
+        display: none;
+    }
+
+    section#secao-paragrafo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pikachuImg{
+        transform: translate(-50%, -69%);
+        width: 350px;
+
+    }
+
+    .pMain h1{
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    h1#tituloTras{
+        transform: translate(-50%, -170%);
+    }
+    h1#tituloFrente{
+        transform: translateY(-110%);
+    }
+
+    .download{
+        width: 312px;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .download img{
+        width: 40px;
+    }
+
+    .download p{
+        font-size: 40px;
+    }
 
 }
