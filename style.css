@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
+/* Declarar uma variavel de cor global */
 :root{
     --primary-color: #F5CF06;
     --secundary-color: #8E4106;
 }
 
-
+/* RESET BASICO */
 *{
     padding: 0;
     margin: 0;
@@ -25,9 +26,9 @@ li, ul, ol{
 }
 
 body{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Usando a variavel */
     height: 100vh;
-    width: 100vw;
+    width: 100vw; /* Preenche a tela inteira */
     display: flex;
     flex-direction: column;
     padding: 70px;
@@ -68,15 +69,13 @@ main{
     gap: 20px;
 }
 
-h1#tituloTras{
+h1#tituloTras{ /* Para chamar um ID usamos '#' */
     position: absolute;
     top: 40%;
     left: 50%;
-
     transform: translate(-50%, -50%);
     font-size: 27vw;
     color: rgba(255, 255, 255, 0.2);
-
 }
 
 h1#tituloFrente{
@@ -89,9 +88,7 @@ h1#tituloFrente{
     position: absolute;
     top: 60%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     width: 559px;
 }
 
@@ -133,6 +130,7 @@ footer{
     margin-top: 73px;
     color: var(--secundary-color);
 }
+
 /* TABlET */
 @media(max-width: 1024px){
     footer{
@@ -142,6 +140,7 @@ footer{
     body{
         padding:30px;
     }
+
     section#secao-paragrafo{
         flex-direction: column;
         align-items: center;
@@ -155,15 +154,20 @@ footer{
     h1#tituloTras{
         transform: translate(-50%, -150%);
     }
+
     h1#tituloFrente{
         transform: translateY(-80%);
+    }
+
+    .pMain p{
+        text-align: center;
     }
 }
 
 /* CELULAR */
 @media(max-width: 480px){
     footer{
-        display: none;
+        display: none; /* oculta um elemento */
     }
 
     .pMain p{
