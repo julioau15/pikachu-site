@@ -14,7 +14,6 @@
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-style: normal;
-    overflow: hidden;
 }
 
 a{
@@ -134,6 +133,10 @@ footer{
 
 /* TABlET */
 @media(max-width: 1024px){
+    *{
+        overflow-x: hidden;
+    }
+
     footer{
         display: none;
     }
@@ -167,6 +170,10 @@ footer{
 
 /* CELULAR */
 @media(max-width: 480px){
+    *{
+        overflow-x: hidden;
+    }
+    
     footer{
         display: none; /* oculta um elemento */
     }
